@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的炫酷博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <header>
+        <div class="logo">
+            <span class="logo-text">MyBlog</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#blog">博客</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="你好，世界">你好，世界</h1>
+            <p class="subtitle">欢迎来到我的个人空间</p>
+            <div class="hero-description">
+                <p>我是一名<span class="highlight">开发者</span>、<span class="highlight">设计师</span>和<span class="highlight">创作者</span></p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#blog" class="btn primary-btn">阅读博客</a>
+                <a href="#contact" class="btn secondary-btn">联系我</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="blob"></div>
+            <img src="https://via.placeholder.com/500" alt="个人照片">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>关于我</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://via.placeholder.com/400" alt="关于我">
+                <div class="experience-badge">5+ 年经验</div>
+            </div>
+            <div class="about-text">
+                <h3>我是谁？</h3>
+                <p>嗨，我是一名充满激情的开发者，热爱创造有意义的数字体验。我专注于前端开发和用户体验设计，致力于构建既美观又实用的网站和应用。</p>
+                
+                <h3>我的技能</h3>
+                <div class="skills">
+                    <div class="skill">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">React</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">UI/UX 设计</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn primary-btn">下载简历</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="section-header">
+            <h2>最新博客</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/600x400" alt="博客图片">
+                    <div class="blog-category">技术</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">2023年10月15日</div>
+                    <h3>现代CSS技巧与最佳实践</h3>
+                    <p>探索最新的CSS功能和技术，帮助你提升网站设计和性能...</p>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/600x400" alt="博客图片">
+                    <div class="blog-category">设计</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">2023年9月28日</div>
+                    <h3>用户体验设计的心理学原理</h3>
+                    <p>了解人类心理如何影响用户体验设计，以及如何利用这些原理...</p>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/600x400" alt="博客图片">
+                    <div class="blog-category">教程</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">2023年9月10日</div>
+                    <h3>从零开始构建React应用</h3>
+                    <p>这篇详细教程将指导你如何从头开始构建一个完整的React应用...</p>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+        <div class="center-btn">
+            <a href="#" class="btn secondary-btn">查看所有文章</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>我的项目</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="项目截图">
+                </div>
+                <div class="project-content">
+                    <h3>电子商务平台</h3>
+                    <p>一个现代化的电子商务平台，具有响应式设计和流畅的用户体验。</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn small-btn"><i class="fas fa-eye"></i> 预览</a>
+                        <a href="#" class="btn small-btn"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="项目截图">
+                </div>
+                <div class="project-content">
+                    <h3>任务管理应用</h3>
+                    <p>一个直观的任务管理应用，帮助用户组织工作和提高生产力。</p>
+                    <div class="project-tech">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn small-btn"><i class="fas fa-eye"></i> 预览</a>
+                        <a href="#" class="btn small-btn"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="项目截图">
+                </div>
+                <div class="project-content">
+                    <h3>天气预报应用</h3>
+                    <p>一个美观的天气预报应用，提供实时天气数据和未来预测。</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>Weather API</span>
+                        <span>SCSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn small-btn"><i class="fas fa-eye"></i> 预览</a>
+                        <a href="#" class="btn small-btn"><i class="fab fa-github"></i> 代码</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>联系我</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>让我们聊聊</h3>
+                <p>无论你有项目合作、咨询需求，还是只是想打个招呼，我都很乐意听取你的想法。</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>email@example.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+86 123 4567 8910</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>北京市，中国</span>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">姓名</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">邮箱</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">主题</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">消息</label>
+                    </div>
+                    <button type="submit" class="btn primary-btn">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">MyBlog</span>
+                <p>分享知识，连接世界</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>导航</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我</a></li>
+                        <li><a href="#blog">博客</a></li>
+                        <li><a href="#projects">项目</a></li>
+                        <li><a href="#contact">联系我</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="#">简历</a></li>
+                        <li><a href="#">教程</a></li>
+                        <li><a href="#">资源库</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li><a href="mailto:email@example.com">email@example.com</a></li>
+                        <li><a href="tel:+8612345678910">+86 123 4567 8910</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MyBlog. 保留所有权利。</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
